@@ -12,6 +12,7 @@
     --clr-primary-orange: hsl(34, 97%, 64%);
     --clir-primary-blue: hsl(212, 86%, 64%);
 
+    --clr-neutral-grey-200: hsl(212, 8%, 74%); 
     --clr-neutral-grey-400: hsl(234, 12%, 34%);
     --clr-neutral-grey-500: hsl(212, 6%, 44%);
     --clr-neutral-white: hsl(0, 0%, 100%);
@@ -144,12 +145,13 @@ body {
 }
 
 .card h2 {
-    color: var(--clr-neutral-grey-500);
+    color: var(--clr-neutral-grey-400);
     margin-block-end: 5px;
 }
 
 .card p {
-    color: var(--clr-neutral-grey-400);
+    font-weight: 500;
+    color: var(--clr-neutral-grey-200);
     margin-block-end: 35px;
 }
 
@@ -165,6 +167,11 @@ body {
 
     .features-grid {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .card p {
+        font-size: 0.9rem;
+        margin-block-end: 60px;
     }
 }
 
